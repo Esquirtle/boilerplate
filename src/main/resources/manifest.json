@@ -1,0 +1,11 @@
+{
+  "Group": "esq.hyplugin",
+  "Name": "Hymod",
+  "Version": "1.0.0",
+  "Description": "Hymod .\nPowered by Playground-Core",
+  "Authors": [{"Name": "esquirtle"}],
+  "Main": "esq.hyplugin.HyPlugin",
+  "LoadOrder": "POSTWORLD",
+  "ServerVersion": ">=0.5.2 <0.6.0",
+  "IncludesAssetPack": true
+}
