@@ -3,14 +3,18 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>esq.hyplugin</groupId>
-    <artifactId>Hyplugin</artifactId>
+    <artifactId>HyPlugin</artifactId>
     <version>1.0.0</version>
+    <name>HyPlugin</name>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
-        <hytale.install-dir>HytaleServer.jar</hytale.install-dir>
+        <!-- Path to the Hytale server jar (the compile-time dependency). Override per
+             machine with -Dhytale.install-dir=/path/to/HytaleServer.jar, or let
+             build.sh autodetect it. The default points at a local checkout layout. -->
+        <hytale.install-dir>${project.basedir}/server/HytaleServer.jar</hytale.install-dir>
         <hytale.patchline>pre-release</hytale.patchline>
     </properties>
 
